@@ -1,0 +1,11 @@
+= Tags Multi Site
+
+This extension makes the tags extension multi_site aware.
+
+Almost needless to say, it requires the tags and multi_site extensions installed. They must also be loaded before this extension, but that happens automatically because the extensions are loaded alphabetically.
+
+Once you have installed the extension, you must upgrade you database:
+
+% rake radiant:extensions:tags_multi_site:migrate
+
+Copyright 2008 Casper Fabricius (casperfabricius.com) and Josh Hart
