@@ -4,6 +4,9 @@ This extension makes the tags extension multi_site aware.
 
 Almost needless to say, it requires the tags and multi_site extensions installed. They must also be loaded before this extension, but that happens automatically because the extensions are loaded alphabetically.
 
+You can enforce the correct loading order by adding this line to your environment.rb:
+% config.extensions = [ :tags, :multi_site, :tags_multi_site, :all ]
+
 Once you have installed the extension, you must upgrade you database:
 
 % rake radiant:extensions:tags_multi_site:migrate
